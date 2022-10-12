@@ -1,0 +1,9 @@
+4a) the prompt() ask the user (prompt the user) in order to user enters (gives) the input which is the lucky number 
+4b) it returns the lucky number that user enters
+4b) the type of the unserInput is a string 
+4d) it shows an alert box which tells the user what was the lucky number they entered 
+5a) Math.random() produces random numbers 
+5b) Math.round() rounds a number to the nearest integer 
+5c) because in the third line Math.round always rounds the number to the nearest integer which by using Math.random the number that is produced is always between 0 and 1 so always the number is near to 0 or near to 1 so it will always be rounded to 1 or 0 and 0 and 1 are binary numbers 
+5d) yes, it is possible because we can change the interval on the range that umbers are generated in for example we can write this let rawRandom =(Math.random()*10)+1; which gives us numbers from 1 inclusive to 10 inclusive or we can write let rawRandom =Math.random()*10 which give use random numbers between 0 inclusive and 10 exclusive 
+ 

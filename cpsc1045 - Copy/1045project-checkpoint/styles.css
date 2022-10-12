@@ -1,0 +1,143 @@
+body{
+    background-color: #006633;
+}
+button{font-size: 20px;}
+
+
+canvas {
+    background-image: url(aaa.jpg);
+    padding-left: 0;
+    padding-right: 10;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
+button{
+      position: relative;  left:60px; top: -500px; background-color: #f44336;   
+    height: 80px;
+    width: 80px; 
+    /* background-image: url('download.jpg'); */
+    }
+    input{
+        position: relative;  left:60px; top: -670px;
+    }
+
+    h4{
+        position: relative;  left:60px; top: -530px;
+        font-size: 20px;
+       
+        text-align: left;
+        /* background: #1abc9c; */
+        color: white;
+    }
+    h5{
+        position: relative;  left:60px; top: -470px;
+        font-size: 20px;
+        color: white;
+    }
+#first{
+    display:flex;
+    
+}
+#first{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#first{transition: all .2s ease-in-out;}
+#first:hover {
+    transform: scale(1.2);
+}
+#second{
+    display:flex;
+    
+}
+#second{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#second{transition: all .2s ease-in-out;}
+#second:hover {
+    transform: scale(1.2);
+}
+#third{
+    display:flex;
+    
+}
+#third{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#third{transition: all .2s ease-in-out;}
+#third:hover {
+    transform: scale(1.2);
+}
+#s1fisrt{
+    display:flex;
+    
+}
+#s1fisrt{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#s1fisrt{transition: all .2s ease-in-out;}
+#s1fisrt:hover {
+    transform: scale(1.2);
+}
+#s2isrt{
+    display:flex;
+    
+}
+#s2isrt{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#s2isrt{transition: all .2s ease-in-out;}
+#s2isrt:hover {
+    transform: scale(1.2);
+}
+#s3fisrt{
+    display:flex;
+    
+}
+#s3fisrt{
+    background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+#s3fisrt{transition: all .2s ease-in-out;}
+#s3fisrt:hover {
+    transform: scale(1.2);
+}
+label{
+    position: relative;  left:30px; top: 470px;
+}
+p{
+    background-color:#808080 ;
+    color:#ff007f ;
+    font-size: 200%;
+    width: 23%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC1045-project</title>
+    <!-- adding the css file to the HTML -->
+    <link  rel="stylesheet" href="styles.css">
+    <!-- adding the script file to the HTML -->
+    <script src="Jick Jick Game.js" defer></script>
+    <style>
+       
+       
+    </style>
+    <!-- adding audio file to the HTML -->
+    <audio controls>
+        <source src='Monkeys-Spinning-Monkeys.mp3'>
+    </audio>
+</head>
+
+<body>
+    <h2>Jick Jick Game</h2>
+    <p id="message">Your Score is : </p>
+    <p id="note">Please scroll down to see the instruction. It is on the right at the bottom:) </p>
+    
+    <canvas id="myCanvas" width="900" height="600" style="border:1px solid #057a3a; " onmousemove="birdS(event)"  ></canvas><br>
+    <label>X:</label><label id="xcoord" ></label><br>
+    <label>Y:</label><label id="ycoord"></label><br>
+    <!--  making a section for the birds to be choosen by the user -->
+    <h4>choose the bird that you want</h4>
+    <div class='selection'>
+        <button style="font-size:55px" id = "first"  onclick="bird1(event)" >&#128035</button>
+        <button style="font-size:55px" id = "second" onclick="bird2(event)">&#128036</button>
+        <button class='selection'style="font-size:55px" id = "third" onclick="bird3(event)">&#128037</button>
+       
+    </div>
+    <!--  making a section for the animals to be choosen by the user -->
+    <h5>choose the animal that is chasing </h5>
+    <h5>you </h5>
+    <div class='selection'>
+        <button  style="font-size:55px" id = "s1fisrt" onclick="animal1(event)">&#128013</button>
+        <button style="font-size:55px" id = "s2isrt" onclick="animal2(event)">&#128059</button>
+        <button style="font-size:55px" id = "s3fisrt" onclick="animal3(event)">&#128047</button>
+    </div>
+    <input type="button" value="Start Game" id="button" onclick="runAnimation()">
+    <!-- making a section for the instruction -->
+    <h6>Game Instruction</h6>
+    <p  id="instruction"> To start the game you need to choose one of the type of the birds, also one type of the animal to follow (chase) you; after choosing bird 
+        and the animal, click on the 'start Game' button to start. To win the game you need to go through all the circles with the bird, but you need to be careful that 
+    the animal doesnt eat you. When you go through circles, it means you are eatting them and your scores will increase. The maximum score is 100, 
+    if you get this maximum you will win. Hint: some circles cannot be eaten easily, you may need to go through them more than once and moving your mouse
+     on them for seconds.
+Also, on the top of the page there is an audio that you can play and stop it whenever you want.
+Hint: to see all the page completely make sure that you scroll up and down completely.</p>
+</body>
+
+</html>

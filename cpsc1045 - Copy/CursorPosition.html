@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cursor position Example</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Cursor position</h1>
+    <canvas id="myCanvas" width="400" height="400" style="border :solid"
+        onmousemove="updatePosition(event)"></canvas><br>
+    <label>X:</label><label id="xcoord"></label><br>
+    <label>Y:</label><label id="ycoord"></label><br>
+    <script>
+        function updatePosition(e) {
+            let ctx = document.getElementById('myCanvas').getContext('2d');
+            let CursorX = document.getElementById('xcoord');
+            let CursorY = document.getElementById('ycoord');
+            CursorX.innerHTML = e.offsetX;
+            CursorY.innerHTML = e.offsetY;
+
+            ctx.clearRect(0, 0, 400, 400);
+
+            //Draws, you can have it draw any shape
+            ctx.beginPath();
+            ctx.arc(e.offsetX, e.offsetY, 30, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+    </script>
+</body>

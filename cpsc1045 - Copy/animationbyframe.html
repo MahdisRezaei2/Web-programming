@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1200" height="400" style="border: 1px solid black;"></canvas>
+    <script>
+        let d = document.getElementById('myCanvas');
+        let ctx = d.getContext("2d");
+        ctx.save();
+        let x = 200;
+        let y = 200;
+        let i = 0;
+        window.requestAnimationFrame(spinW)
+        function spinW() {
+                ctx.save();
+                ctx.clearRect(0, 0, 1200, 400)
+                ctx.translate(x, y)
+                ctx.rotate(i / 10 * Math.PI);
+                drawWheel('red');
+                ctx.rotate(2 / 3 * Math.PI);
+                drawWheel('green');
+                ctx.rotate(2 / 3 * Math.PI);
+                drawWheel('blue');
+                i++;
+                ctx.restore();
+                window.requestAnimationFrame(spinW)
+        }
+
+        function drawWheel(str) {
+            ctx.beginPath();
+            ctx.arc(0, 0, 100, 0, 120 * Math.PI / 180)
+            ctx.lineTo(0, 0)
+            ctx.lineTo(100, 0)
+            ctx.fillStyle = str;
+            ctx.fill();
+        }
+    </script>
+</body>
+
+</html>

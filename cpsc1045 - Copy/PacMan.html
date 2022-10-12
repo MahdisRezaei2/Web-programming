@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PacMan</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="200" style="border: 1px solid black;"></canvas>
+    <script>
+     // write code here to draw the shapes.
+     let c = document.getElementById('myCanvas');
+    let ctx = c.getContext('2d');
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(100,100,50,0.643,-0.643);
+    ctx.moveTo(100,100);
+    ctx.lineTo(140,70);
+    ctx.moveTo(100,100);
+    ctx.lineTo(140,130);
+    ctx.fillStyle = 'yellow';
+    ctx.fill();
+    ctx.strokeStyle = 'white';
+    //
+    ctx.beginPath();
+    ctx.moveTo(100,100);
+    ctx.lineTo(140,70);
+    ctx.lineTo(140,130);
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.stroke();
+    //
+    
+    ctx.beginPath();
+    
+    ctx.lineTo(140,70);
+    ctx.lineTo(140,130);
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle
+
+    ctx.strokeStyle = 'white';
+    ctx.beginPath();
+    ctx.arc(130,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(160,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(190,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(220,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(250,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(280,100,5,0,2*Math.PI);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.stroke();
+    </script>
+</body>
+</html>

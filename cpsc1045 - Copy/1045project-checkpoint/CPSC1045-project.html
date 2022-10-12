@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC1045-project</title>
+    <link  rel="stylesheet" href="styles.css">
+    <script src="Jick Jick Game.js" defer></script>
+    <style>
+        /* body {
+            background-image: url('istockphoto-171309616-170667a.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+        } */
+       
+    </style>
+    <audio controls>
+        <source src='Monkeys-Spinning-Monkeys.mp3'>
+    </audio>
+</head>
+
+<body>
+    <h2>Jick Jick Game</h2>
+    <p id="message">Your Score is : </p>
+    <canvas id="myCanvas" width="900" height="600" style="border:1px solid #057a3a; " onmousemove="birdS(event)"  ></canvas><br>
+    <label>X:</label><label id="xcoord" ></label><br>
+    <label>Y:</label><label id="ycoord"></label><br>
+    <!-- <label>X:</label><label id="animation" ></label> -->
+    <!-- <img id="grass" src ='istockphoto-171309616-170667a.jpg' width="800" height="500"> -->
+    <h4>choose the bird that you want</h4>
+    <div class='selection'>
+        <button style="font-size:55px" id = "first"  onclick="bird1(event)" >&#128035</button>
+        <button style="font-size:55px" id = "second" onclick="bird2(event)">&#128036</button>
+        <button class='selection'style="font-size:55px" id = "third" onclick="bird3(event)">&#128037</button>
+        <!-- <button class='selection' style="font-size:55px" id = "fisrt" >&#128035</button>
+        <button class='selection'style="font-size:55px" id = "second" >&#128036</button>
+        <button class='selection'style="font-size:55px">&#128037</button> -->
+    </div>
+    <h5>choose the animal that is chasing </h5>
+    <h5>you </h5>
+    <div class='selection'>
+        <button  style="font-size:55px" id = "s1fisrt" onclick="animal1(event)">&#128013</button>
+        <button style="font-size:55px" id = "s2isrt" onclick="animal2(event)">&#128059</button>
+        <button style="font-size:55px" id = "s3fisrt" onclick="animal3(event)">&#128047</button>
+    </div>
+    <input type="button" value="Start Game" id="button" onclick="runAnimation()">
+</body>
+
+</html>

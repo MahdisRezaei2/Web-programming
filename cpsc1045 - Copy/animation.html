@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="400" style="border: 1px solid black;"></canvas>
+    <input type="button" value="Start" id="button1">
+    <script>
+        let d = document.getElementById('myCanvas');
+        let ctx = d.getContext("2d");
+        let btn1 = document.getElementById('button1');
+        btn1.addEventListener('click', moveDot)
+        let x = 0;
+        let y = 0;
+        let moveDistance = 5;
+        let timerID;
+        
+        function moveDot() {
+            timerID = setInterval(moveThing, 30)
+        }
+
+        function moveThing() {
+           
+           ctx.clearRect(0,0,600,400);
+           ctx.save();
+           ctx.beginPath();
+           ctx.arc(x, y, 10, 0, 2 * Math.PI)
+           ctx.fill();
+            x += moveDistance;
+           y += moveDistance;
+           ctx.restore();
+       }
+
+
+
+
+    </script>
+</body>
+
+</html>

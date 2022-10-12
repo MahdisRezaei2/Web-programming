@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="400" style="border: 1px solid black;"></canvas>
+    <br>
+    <input type="button" value="Spin" id="bt1">
+    <input type="button" value="Stop" id="bt2">
+    <script>
+        let d = document.getElementById('myCanvas');
+        let bt1 = document.getElementById('bt1');
+        let ctx = d.getContext("2d");
+        let i = 0;
+        let timerID;
+        ctx.save();
+        bt1.addEventListener('click', spinW);
+        bt2.addEventListener('click', stopW);
+        function spinW() {
+            if (timerID == null)
+                timerID = setInterval(spinWheel, 100)
+        }
+
+        function stopW() {
+            if (timerID !== null) {
+                clearInterval(timerID);
+                timerID = null;
+            }
+        }
+
+        function spinWheel() {
+            ctx.clearRect(0, 0, 1200, 400)
+            ctx.save();
+            ctx.translate(200, 200)
+            ctx.rotate(i / 10 * Math.PI);
+            drawWheel('red');
+            ctx.rotate(2 / 3 * Math.PI);
+            drawWheel('green');
+            ctx.rotate(2 / 3 * Math.PI);
+            drawWheel('blue');
+            i++;
+            ctx.restore();
+        }
+
+        function drawWheel(str) {
+            ctx.beginPath();
+            ctx.arc(0, 0, 100, 0, 120 * Math.PI / 180)
+            ctx.lineTo(0, 0)
+            ctx.lineTo(100, 0)
+            ctx.fillStyle = str;
+            ctx.fill();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4_1</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #griddiv {
+            display: grid;
+            margin: auto;
+            width: 50%;
+            height: 500px;
+            grid-template-columns: auto auto;
+        }
+
+        div div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab4_1</h1>
+    <p>You will use event handling to make the following grid interactive.</p>
+    <div id="griddiv">
+        <!--the id attribute is used to specify a unique id for an HTML element-->
+        <!--a property is a value that u can get or set like changing the contet
+        a method is a action u can do like addor deleting an htlm element-->
+        <!-- get elementbyid is a method but innerhtml is a property -->
+        <!-- we use id to find the element
+        innerhtml is useful for getting or replacing-->
+        <div id="div1" onmouseover="colourGreen1()" onclick="colourBlue1()"></div>
+        <!-- giving id , event, which is at the same time by calling the function giving all of them to the elemnt div-->
+        <div id="div2" onmouseover = "colourGreen2()" onclick="colourBlue2()"></div>
+        <!--all html elements ahve attribute it provides additional info about elemnt are always in the start tag-->
+        <div id="div3" onmouseover = "colourGreen3()" onclick="colourBlue3()"></div>
+        <div id="div4" onmouseover = "colourGreen4()" onclick="colourBlue4()"></div>
+    </div>
+</body>
+<script>
+    function colourGreen1(){
+        let a1 = document.getElementById('div1');
+        a1.style.backgroundColor='green';
+        /**
+         * so here we are getting the element and asssigning the element to a variable but the point is the element is in htlm and variable is in script
+         *id
+         * do we have function in html?
+         *comment stars
+         *can i call same events with same functions for diff elemnts
+         * is a an element ? so we have element in both jas and j=html but element here is the vaiable ?
+         * addeventlisterner has the mwnaing of the on ?
+         * differrent between two values in the slides
+         * id = "" is an attribute too?
+        */
+    }
+    function colourGreen2() {
+        let a2 = document.getElementById('div2');
+        a2.style.backgroundColor='green';
+        /**so the only thing this function is doing is getting the element from html by its id and changing its propeerty
+         which is its bavkground color related to its style*/
+        
+    }
+    function colourGreen3(){
+        let a3 = document.getElementById('div3');
+        a3.style.backgroundColor='green';
+        
+    }
+    function colourGreen4(){
+        let a4 = document.getElementById('div4');
+        a4.style.backgroundColor='green';
+    }
+    function colourBlue1(){
+        let a1 = document.getElementById('div1');
+        a1.style.backgroundColor='blue';
+    }
+    function colourBlue2(){
+        let a2 = document.getElementById('div2');
+        a2.style.backgroundColor='blue';
+    }
+    function colourBlue3(){
+        let a3 = document.getElementById('div3');
+        a3.style.backgroundColor='blue';
+    }
+    function colourBlue4(){
+        let a4 = document.getElementById('div4');
+        a4.style.backgroundColor='blue';
+    }
+
+    
+    //Add the event related attibute to the divisions
+    //Make functions, each function is to respond to a specific event from a certain element.
+</script>
+</html>
